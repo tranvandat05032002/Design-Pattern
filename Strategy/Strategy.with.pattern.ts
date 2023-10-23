@@ -65,6 +65,8 @@ const getPriceStrategies: KeyObject = {
 };
 
 function getPriceWithPattern(originalPrice: number, typePromotion: string) {
+  // Kiểm tra tính hợp lệ của đầu vào
+  // và thông báo lỗi
   return getPriceStrategies[typePromotion](originalPrice); // MyObject[key](valueOfFunction)
 }
 
